@@ -18,5 +18,12 @@ _The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "
 1. MUST support highlighting today's date
 1. MUST support truncation of day and month names
 1. MUST support custom events for all data changes
+1. SHOULD support a simplified HTML API whenever possible†
 1. It SHOULD support display of local date/time versus a specified alternate timezone
 1. It is RECOMMENDED to support the showing of week numbers
+
+<hr>
+
+† It is of the opinion that we need to ensure, within reason, that all features of the custom element can be expressed just the same in HTML as in JS props/functions. E.g. `<x-cal disable-past-dates>` is preferred over a user defined function of `calendarRef.disablePastDates = true`.
+
+A RECOMMENDED resource for API definitions is the [Auro guide to API development](https://auro.alaskaair.com/generator/define-api).
