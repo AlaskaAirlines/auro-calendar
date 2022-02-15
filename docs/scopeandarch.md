@@ -9,6 +9,7 @@ _The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "
 1. MUST support i18n date support, e.g. "MM/DD/YYYY" vs "DD.MM.YYYY"
 1. MUST show/hide dates adjacent to current month
 1. MUST support setting a min and max range of dates for date picker
+1. MUST support error handling, e.g. user tries to select a date outside of min/max rage.
 1. MUST support disabling of dates
   - disable weekends
   - disable dates prior to today's date
