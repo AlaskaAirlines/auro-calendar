@@ -1,8 +1,8 @@
 ---
 name: Publish Component
 about: Create a ticket to drive compliance before publishing a new component to Auro Design System
-title: 'auro-template; publish to Auro Design System'
-labels: 'Status: Review Needed, not-reviewed'
+title: 'Publish to Auro Design System'
+labels: 'auro-calendar, not-reviewed'
 ---
 
 # Publish Component
@@ -53,7 +53,7 @@ labels: 'Status: Review Needed, not-reviewed'
     - [ ] All work is reviewed by Auro team
 1. __Publishing__
     - [ ] Removed all references to `auroLabs` from the repository
-    - [ ] Component properly named,  e.g. `auro-template`
+    - [ ] Component properly named,  e.g. `auro-calendar`
     - [ ] GitHub Repository properly named
     - Updated `readme.md`
       - [ ] Install information updated to published namespace
