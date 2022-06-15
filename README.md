@@ -21,10 +21,6 @@ The following sections are editable by making changes to the following files:
 
 `<auro-calendar>` is a [HTML custom element](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements) for the purpose of ...
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam convallis in tellus nec pellentesque. Integer bibendum ligula sit amet vehicula gravida. Maecenas accumsan, ligula vitae molestie iaculis, tellus mi laoreet ex [install instructions](https://auro.alaskaair.com/components/auro/button/install), ac malesuada velit dolor vel mi. Cras et rutrum urna. Sed mattis mi eu tortor ullamcorper, egestas bibendum mauris cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus viverra eros eget neque commodo vulputate. In tempus eu velit at dictum.
-
-Nulla at augue facilisis `odio lobortis` molestie vitae a nulla.
-
 ## UI development browser support
 
 For the most up to date information on [UI development browser support](https://auro.alaskaair.com/support/browsersSupport)
@@ -62,7 +58,7 @@ import "@aurodesignsystem/auro-calendar";
 **Reference component in HTML**
 
 ```html
-<auro-calendar>Hello World</auro-calendar>
+<auro-calendar></auro-calendar>
 ```
 
 ## Install bundled assets from CDN
@@ -94,7 +90,7 @@ The `<auro-calendar>` element should be used in situations where users may:
 ### Default auro-calendar
 
 ```html
-<auro-calendar>Hello World</auro-calendar>
+<auro-calendar></auro-calendar>
 ```
 
 ## Development

@@ -5,6 +5,7 @@
 
 // If using litElement base class
 import { LitElement, html } from "lit-element";
+import '@lion/calendar/define';
 
 // If using auroElement base class
 // See instructions for importing auroElement base class https://git.io/JULq4
@@ -36,9 +37,6 @@ class AuroCalendar extends LitElement {
   static get properties() {
     return {
       // ...super.properties,
-
-      // this property is DEMO ONLY! Please delete.
-      cssClass:   { type: String }
     };
   }
 
@@ -55,10 +53,9 @@ class AuroCalendar extends LitElement {
   // function that renders the HTML and CSS into  the scope of the component
   render() {
     return html`
-
-      <!-- this is demo code, DO NOT USE IN YOUR ELEMENT -->
-      <div class=${this.cssClass} tabindex="0">
+      <div>
         <slot></slot>
+        <lion-calendar></lion-calendar>
       </div>
     `;
   }

@@ -6,15 +6,10 @@ The auro-calendar element provides users a way to ... (it would be great if you 
 
 ## Attributes
 
-| Attribute | Type      | Description                               |
-|-----------|-----------|-------------------------------------------|
-| [fixed](#fixed)   | `Boolean` | Uses fixed pixel values for element shape |
-
-## Properties
-
-| Property   | Attribute  | Type     | Description                                      |
-|------------|------------|----------|--------------------------------------------------|
-| [cssClass](#cssClass) | `cssClass` | `String` | Applies designated CSS class to demo element - you want to delete me! |
+| Attribute  | Type      | Description                                      |
+|------------|-----------|--------------------------------------------------|
+| [cssClass](#cssClass) | `String`  | Applies designated CSS class to demo element - you want to delete me! |
+| [fixed](#fixed)    | `Boolean` | Uses fixed pixel values for element shape        |
 
 ## API Examples
 
@@ -23,13 +18,13 @@ The auro-calendar element provides users a way to ... (it would be great if you 
 <div class="twoColDemoRow">
   <div>
     <div class="exampleWrapper">
-      <auro-calendar>Hello World</auro-calendar>
+      <auro-calendar></auro-calendar>
     </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
 ```html
-<auro-calendar>Hello World</auro-calendar>
+<auro-calendar></auro-calendar>
 ```
 
 </auro-accordion>
@@ -40,13 +35,13 @@ The auro-calendar element provides users a way to ... (it would be great if you 
 Explanation and use description.
 
 <div class="exampleWrapper">
-  <auro-calendar>Hello World</auro-calendar>
+  <auro-calendar></auro-calendar>
 </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
 ```html
-<auro-calendar>Hello World</auro-calendar>
+<auro-calendar></auro-calendar>
 ```
 
 </auro-accordion>
@@ -57,13 +52,13 @@ Explanation and use description.
 Explanation and use description.
 
 <div class="exampleWrapper">
-  <auro-calendar>Hello World</auro-calendar>
+  <auro-calendar></auro-calendar>
 </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
 ```html
-<auro-calendar>Hello World</auro-calendar>
+<auro-calendar></auro-calendar>
 ```
 
 </auro-accordion>
@@ -74,13 +69,13 @@ Explanation and use description.
 Explanation and use description.
 
 <div class="exampleWrapper">
-  <auro-calendar>Hello World</auro-calendar>
+  <auro-calendar></auro-calendar>
 </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
 ```html
-<auro-calendar>Hello World</auro-calendar>
+<auro-calendar></auro-calendar>
 ```
 
 </auro-accordion>
@@ -91,13 +86,13 @@ Explanation and use description.
 Explanation and use description.
 
 <div class="exampleWrapper">
-  <auro-calendar>Hello World</auro-calendar>
+  <auro-calendar></auro-calendar>
 </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
 ```html
-<auro-calendar>Hello World</auro-calendar>
+<auro-calendar></auro-calendar>
 ```
 
 </auro-accordion>
@@ -108,13 +103,13 @@ Explanation and use description.
 Explanation and use description.
 
 <div class="exampleWrapper">
-  <auro-calendar>Hello World</auro-calendar>
+  <auro-calendar></auro-calendar>
 </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
 ```html
-<auro-calendar>Hello World</auro-calendar>
+<auro-calendar></auro-calendar>
 ```
 
 </auro-accordion>
