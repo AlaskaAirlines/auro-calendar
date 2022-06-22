@@ -58,7 +58,14 @@ import "@aurodesignsystem/auro-calendar";
 **Reference component in HTML**
 
 ```html
+<!-- <auro-calendar></auro-calendar> -->
+<!-- <auro-calendar selectedDate="2022, 06, 10"></auro-calendar> -->
+<!-- <auro-calendar selectedDate="2019/12/09" maxDate="2019/12/25"  minDate="2019/12/06"></auro-calendar> -->
+<!-- <auro-calendar selectedDate="06/14/2022"></auro-calendar> -->
+<!-- <auro-calendar selectedDate="2019/12/09" centralDate="2019/11/04"></auro-calendar> -->
 <auro-calendar></auro-calendar>
+<!-- <auro-calendar selectedDate="06/06/2022" centralDate="06/08/2022"></auro-calendar> -->
+<!-- <auro-calendar minDate="12/12/2002" maxDate="01/02/2023"></auro-calendar> -->
 ```
 
 ## Install bundled assets from CDN
@@ -90,7 +97,14 @@ The `<auro-calendar>` element should be used in situations where users may:
 ### Default auro-calendar
 
 ```html
+<!-- <auro-calendar></auro-calendar> -->
+<!-- <auro-calendar selectedDate="2022, 06, 10"></auro-calendar> -->
+<!-- <auro-calendar selectedDate="2019/12/09" maxDate="2019/12/25"  minDate="2019/12/06"></auro-calendar> -->
+<!-- <auro-calendar selectedDate="06/14/2022"></auro-calendar> -->
+<!-- <auro-calendar selectedDate="2019/12/09" centralDate="2019/11/04"></auro-calendar> -->
 <auro-calendar></auro-calendar>
+<!-- <auro-calendar selectedDate="06/06/2022" centralDate="06/08/2022"></auro-calendar> -->
+<!-- <auro-calendar minDate="12/12/2002" maxDate="01/02/2023"></auro-calendar> -->
 ```
 
 ## Development
