@@ -12,3 +12,9 @@
 | `minDate`               | `minDate`               |          | "undefined" |
 | `selectedDate`          | `selectedDate`          |          | "undefined" |
 | `weekdayHeaderNotation` | `weekdayHeaderNotation` | `string` | "narrow"    |
+
+## Events
+
+| Event                | Type               | Description                                      |
+|----------------------|--------------------|--------------------------------------------------|
+| `auroCalendar-ready` | `CustomEvent<any>` | Notifies that the component has finished initializing. |

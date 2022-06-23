@@ -1,6 +1,11 @@
 import {LitElement, html} from 'lit';
 import '@lion/calendar/define';
 
+// See https://git.io/JJ6SJ for "How to document your components using JSDoc"
+/**
+ * @fires auroCalendar-ready - Notifies that the component has finished initializing.
+ */
+
 class AuroCalendar extends LitElement {
   constructor() {
     super();
@@ -52,6 +57,24 @@ class AuroCalendar extends LitElement {
         reflect: true
       },
     };
+  }
+
+  /**
+   * @private
+   * @returns {void} Marks the component as ready and sends event.
+   */
+   notifyReady() {
+    this.ready = true;
+
+    this.dispatchEvent(new CustomEvent('auroCalendar-ready', {
+      bubbles: true,
+      cancelable: false,
+      composed: true,
+    }));
+  }
+
+  firstUpdated() {
+    this.notifyReady();
   }
 
   render() {
