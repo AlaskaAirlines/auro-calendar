@@ -80,7 +80,6 @@ class AuroCalendar extends LitElement {
   render() {
     return html`
       <div>
-        ${this.weekdayHeaderNotation}
           <!--
           TODO: Make this property work
           .disableDates=${this.disableDates}
