@@ -15,6 +15,7 @@
 
 ## Events
 
-| Event                | Type               | Description                                      |
-|----------------------|--------------------|--------------------------------------------------|
-| `auroCalendar-ready` | `CustomEvent<any>` | Notifies that the component has finished initializing. |
+| Event                       | Type               | Description                                      |
+|-----------------------------|--------------------|--------------------------------------------------|
+| `auroCalendar-dateSelected` | `CustomEvent<any>` |                                                  |
+| `auroCalendar-ready`        | `CustomEvent<any>` | Notifies that the component has finished initializing. |

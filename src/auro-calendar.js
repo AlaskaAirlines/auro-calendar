@@ -1,5 +1,7 @@
-import {LitElement, html} from 'lit';
+import { LitElement, html } from 'lit';
 import '@lion/calendar/define';
+
+import styleCss from "./style-css.js";
 
 // See https://git.io/JJ6SJ for "How to document your components using JSDoc"
 /**
@@ -59,6 +61,10 @@ class AuroCalendar extends LitElement {
     };
   }
 
+  static get styles() {
+    return [styleCss];
+  }
+
   /**
    * @private
    * @returns {void} Marks the component as ready and sends event.
@@ -73,8 +79,30 @@ class AuroCalendar extends LitElement {
     }));
   }
 
+  /**
+   * @private
+   * @returns {void} Process a date selection made in the calendar
+   */
+   handleDateSelection() {
+     if (this.selectedDate !== this.lCal.selectedDate) {
+      this.selectedDate = this.lCal.selectedDate;
+     }
+
+    this.dispatchEvent(new CustomEvent('auroCalendar-dateSelected', {
+      bubbles: true,
+      cancelable: false,
+      composed: true,
+    }));
+  }
+
   firstUpdated() {
     this.notifyReady();
+
+    // Listen for date selection in the calendar
+    this.lCal = this.shadowRoot.querySelector('lion-calendar');
+    this.lCal.addEventListener('user-selected-date-changed', () => {
+      this.handleDateSelection();
+    })
   }
 
   render() {
