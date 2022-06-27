@@ -1,6 +1,8 @@
 import { LitElement, html } from 'lit';
 import '@lion/calendar/define';
 
+import { LionCalendar } from '@lion/calendar';
+
 import styleCss from "./style-css.js";
 
 // See https://git.io/JJ6SJ for "How to document your components using JSDoc"
@@ -8,18 +10,19 @@ import styleCss from "./style-css.js";
  * @fires auroCalendar-ready - Notifies that the component has finished initializing.
  */
 
-class AuroCalendar extends LitElement {
+// class AuroCalendar extends LitElement {
+class AuroCalendar extends LionCalendar {
   constructor() {
     super();
 
-    this.centralDate = new Date(); /* default to today */
-    this.disableDates = undefined;
-    this.firstDayOfWeek = 0;
-    this.locale = undefined;
-    this.maxDate = undefined;
-    this.minDate = undefined;
-    this.selectedDate = undefined;
-    this.weekdayHeaderNotation = 'narrow'; /* long|short|narrow */
+    // this.centralDate = new Date(); /* default to today */
+    // this.disableDates = undefined;
+    // this.firstDayOfWeek = 0;
+    // this.locale = undefined;
+    // this.maxDate = undefined;
+    // this.minDate = undefined;
+    // this.selectedDate = undefined;
+    // this.weekdayHeaderNotation = 'narrow'; /* long|short|narrow */
   }
 
   static get properties() {
@@ -112,14 +115,16 @@ class AuroCalendar extends LitElement {
           TODO: Make this property work
           .disableDates=${this.disableDates}
           -->
-        <lion-calendar
+        <lion-calendar>
+
+          <!--
           .centralDate=${new Date(this.centralDate)}
           .firstDayOfWeek=${this.firstDayOfWeek}
           .locale=${new Date(this.locale)}
           .minDate=${new Date(this.minDate)}
           .maxDate=${new Date(this.maxDate)}
           .selectedDate=${new Date(this.selectedDate)}
-          .weekdayHeaderNotation=${this.weekdayHeaderNotation}>
+          .weekdayHeaderNotation=${this.weekdayHeaderNotation} -->
         </lion-calendar>
       </div>
     `;
