@@ -4,16 +4,31 @@
 
 ## Properties
 
-| Property                | Attribute               | Type     | Default     |
-|-------------------------|-------------------------|----------|-------------|
-| [centralDate](#centralDate)           | `centralDate`           |          |             |
-| [disableDates](#disableDates)          | `disableDates`          | `string` | "undefined" |
-| [firstDayOfWeek](#firstDayOfWeek)        | `firstDayOfWeek`        | `number` | 0           |
-| [locale](#locale)                | `locale`                | `string` | "undefined" |
-| [maxDate](#maxDate)               | `maxDate`               |          | "undefined" |
-| [minDate](#minDate)               | `minDate`               |          | "undefined" |
-| [selectedDate](#selectedDate)          | `selectedDate`          |          | "undefined" |
-| [weekdayHeaderNotation](#weekdayHeaderNotation) | `weekdayHeaderNotation` | `string` | "narrow"    |
+| Property                | Modifiers | Type                     |
+|-------------------------|-----------|--------------------------|
+| [centralDate](#centralDate)           |           | `Date`                   |
+| [dayPreprocessor](#dayPreprocessor)       |           | `(day: Day) => Day`      |
+| [disableDates](#disableDates)          |           | `(day: Date) => boolean` |
+| [firstDayOfWeek](#firstDayOfWeek)        |           | `number`                 |
+| [focusedDate](#focusedDate)           | readonly  | `Date \| null`           |
+| [locale](#locale)                |           | `string`                 |
+| [maxDate](#maxDate)               |           | `Date`                   |
+| [minDate](#minDate)               |           | `Date`                   |
+| [selectedDate](#selectedDate)          |           | `Date \| undefined`      |
+| [weekdayHeaderNotation](#weekdayHeaderNotation) |           | `string`                 |
+
+## Methods
+
+| Method              | Type                          | Description                                      |
+|---------------------|-------------------------------|--------------------------------------------------|
+| [focusCentralDate](#focusCentralDate)  | `(): void`                    |                                                  |
+| [focusDate](#focusDate)         | `(date: Date): Promise<void>` | **date**: undefined                              |
+| [focusSelectedDate](#focusSelectedDate) | `(): Promise<void>`           |                                                  |
+| [goToNextMonth](#goToNextMonth)     | `(): void`                    |                                                  |
+| [goToNextYear](#goToNextYear)      | `(): void`                    |                                                  |
+| [goToPreviousMonth](#goToPreviousMonth) | `(): void`                    |                                                  |
+| [goToPreviousYear](#goToPreviousYear)  | `(): void`                    |                                                  |
+| [initCentralDate](#initCentralDate)   | `(): void`                    | This exposes an interface for datepickers that want to<br />reinitialize when calendar is opened |
 
 ## Events
 

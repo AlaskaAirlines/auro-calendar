@@ -2,16 +2,31 @@
 
 ## Properties
 
-| Property                | Attribute               | Type     | Default     |
-|-------------------------|-------------------------|----------|-------------|
-| `centralDate`           | `centralDate`           |          |             |
-| `disableDates`          | `disableDates`          | `string` | "undefined" |
-| `firstDayOfWeek`        | `firstDayOfWeek`        | `number` | 0           |
-| `locale`                | `locale`                | `string` | "undefined" |
-| `maxDate`               | `maxDate`               |          | "undefined" |
-| `minDate`               | `minDate`               |          | "undefined" |
-| `selectedDate`          | `selectedDate`          |          | "undefined" |
-| `weekdayHeaderNotation` | `weekdayHeaderNotation` | `string` | "narrow"    |
+| Property                | Modifiers | Type                     |
+|-------------------------|-----------|--------------------------|
+| `centralDate`           |           | `Date`                   |
+| `dayPreprocessor`       |           | `(day: Day) => Day`      |
+| `disableDates`          |           | `(day: Date) => boolean` |
+| `firstDayOfWeek`        |           | `number`                 |
+| `focusedDate`           | readonly  | `Date \| null`           |
+| `locale`                |           | `string`                 |
+| `maxDate`               |           | `Date`                   |
+| `minDate`               |           | `Date`                   |
+| `selectedDate`          |           | `Date \| undefined`      |
+| `weekdayHeaderNotation` |           | `string`                 |
+
+## Methods
+
+| Method              | Type                          | Description                                      |
+|---------------------|-------------------------------|--------------------------------------------------|
+| `focusCentralDate`  | `(): void`                    |                                                  |
+| `focusDate`         | `(date: Date): Promise<void>` | **date**: undefined                              |
+| `focusSelectedDate` | `(): Promise<void>`           |                                                  |
+| `goToNextMonth`     | `(): void`                    |                                                  |
+| `goToNextYear`      | `(): void`                    |                                                  |
+| `goToPreviousMonth` | `(): void`                    |                                                  |
+| `goToPreviousYear`  | `(): void`                    |                                                  |
+| `initCentralDate`   | `(): void`                    | This exposes an interface for datepickers that want to<br />reinitialize when calendar is opened |
 
 ## Events
 
