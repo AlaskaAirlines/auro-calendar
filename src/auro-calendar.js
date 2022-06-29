@@ -19,7 +19,7 @@ class AuroCalendar extends LionCalendar {
    * @private
    * @returns {void} Marks the component as ready and sends event.
    */
-   notifyReady() {
+  notifyReady() {
     this.ready = true;
 
     this.dispatchEvent(new CustomEvent('auroCalendar-ready', {
@@ -31,11 +31,11 @@ class AuroCalendar extends LionCalendar {
 
   /**
    * @private
-   * @returns {void} Generates the Month Year string used in the header
+   * @returns {void} Generates the Month Year string used in the header.
    */
   reflectMonthYear() {
     const yearStr = this.centralDate.getFullYear().toString();
-    let monthStr = this.shadowRoot.querySelector('.calendar__navigation-heading#month').innerText;
+    const monthStr = this.shadowRoot.querySelector('.calendar__navigation-heading#month').innerText;
 
     this.monthYearLabel.innerText = monthStr.concat(' ', yearStr);
   }
@@ -53,12 +53,18 @@ class AuroCalendar extends LionCalendar {
     this.monthYearLabel.id = "monthYearLabel";
 
     this.shadowRoot.appendChild(this.monthYearLabel);
+    this.reflectMonthYear();
 
     this.notifyReady();
   }
 
-  updated() {
-    this.reflectMonthYear()
+  updated(changedProperties) {
+    super.updated(changedProperties);
+    if (changedProperties.has('__focusedDate') && this.__focusedDate) { // eslint-disable-line no-underscore-dangle
+      this.focusCentralDate();
+    }
+
+    this.reflectMonthYear();
   }
 }
 
