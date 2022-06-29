@@ -45,14 +45,12 @@
   <div>
     <div class="exampleWrapper">
       <auro-calendar></auro-calendar>
-      <auro-calendar centralDate="1/1/2000" maxDate="1/12/2000" minDate="1/5/2000" firstDayOfWeek="4" weekdayHeaderNotation="long"></auro-calendar>
     </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
 ```html
 <auro-calendar></auro-calendar>
-<auro-calendar centralDate="1/1/2000" maxDate="1/12/2000" minDate="1/5/2000" firstDayOfWeek="4" weekdayHeaderNotation="long"></auro-calendar>
 ```
 
 </auro-accordion>
@@ -64,14 +62,12 @@ Explanation and use description.
 
 <div class="exampleWrapper">
   <auro-calendar></auro-calendar>
-  <auro-calendar centralDate="1/1/2000" maxDate="1/12/2000" minDate="1/5/2000" firstDayOfWeek="4" weekdayHeaderNotation="long"></auro-calendar>
 </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
 ```html
 <auro-calendar></auro-calendar>
-<auro-calendar centralDate="1/1/2000" maxDate="1/12/2000" minDate="1/5/2000" firstDayOfWeek="4" weekdayHeaderNotation="long"></auro-calendar>
 ```
 
 </auro-accordion>
@@ -83,14 +79,12 @@ Explanation and use description.
 
 <div class="exampleWrapper">
   <auro-calendar></auro-calendar>
-  <auro-calendar centralDate="1/1/2000" maxDate="1/12/2000" minDate="1/5/2000" firstDayOfWeek="4" weekdayHeaderNotation="long"></auro-calendar>
 </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
 ```html
 <auro-calendar></auro-calendar>
-<auro-calendar centralDate="1/1/2000" maxDate="1/12/2000" minDate="1/5/2000" firstDayOfWeek="4" weekdayHeaderNotation="long"></auro-calendar>
 ```
 
 </auro-accordion>
@@ -102,14 +96,12 @@ Explanation and use description.
 
 <div class="exampleWrapper">
   <auro-calendar></auro-calendar>
-  <auro-calendar centralDate="1/1/2000" maxDate="1/12/2000" minDate="1/5/2000" firstDayOfWeek="4" weekdayHeaderNotation="long"></auro-calendar>
 </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
 ```html
 <auro-calendar></auro-calendar>
-<auro-calendar centralDate="1/1/2000" maxDate="1/12/2000" minDate="1/5/2000" firstDayOfWeek="4" weekdayHeaderNotation="long"></auro-calendar>
 ```
 
 </auro-accordion>
@@ -121,14 +113,12 @@ Explanation and use description.
 
 <div class="exampleWrapper">
   <auro-calendar></auro-calendar>
-  <auro-calendar centralDate="1/1/2000" maxDate="1/12/2000" minDate="1/5/2000" firstDayOfWeek="4" weekdayHeaderNotation="long"></auro-calendar>
 </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
 ```html
 <auro-calendar></auro-calendar>
-<auro-calendar centralDate="1/1/2000" maxDate="1/12/2000" minDate="1/5/2000" firstDayOfWeek="4" weekdayHeaderNotation="long"></auro-calendar>
 ```
 
 </auro-accordion>
@@ -140,14 +130,12 @@ Explanation and use description.
 
 <div class="exampleWrapper">
   <auro-calendar></auro-calendar>
-  <auro-calendar centralDate="1/1/2000" maxDate="1/12/2000" minDate="1/5/2000" firstDayOfWeek="4" weekdayHeaderNotation="long"></auro-calendar>
 </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
 ```html
 <auro-calendar></auro-calendar>
-<auro-calendar centralDate="1/1/2000" maxDate="1/12/2000" minDate="1/5/2000" firstDayOfWeek="4" weekdayHeaderNotation="long"></auro-calendar>
 ```
 
 </auro-accordion>

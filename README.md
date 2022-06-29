@@ -59,7 +59,6 @@ import "@aurodesignsystem/auro-calendar";
 
 ```html
 <auro-calendar></auro-calendar>
-<auro-calendar centralDate="1/1/2000" maxDate="1/12/2000" minDate="1/5/2000" firstDayOfWeek="4" weekdayHeaderNotation="long"></auro-calendar>
 ```
 
 ## Install bundled assets from CDN
@@ -92,7 +91,6 @@ The `<auro-calendar>` element should be used in situations where users may:
 
 ```html
 <auro-calendar></auro-calendar>
-<auro-calendar centralDate="1/1/2000" maxDate="1/12/2000" minDate="1/5/2000" firstDayOfWeek="4" weekdayHeaderNotation="long"></auro-calendar>
 ```
 
 ## Development

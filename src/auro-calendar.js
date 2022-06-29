@@ -29,6 +29,17 @@ class AuroCalendar extends LionCalendar {
     }));
   }
 
+  /**
+   * @private
+   * @returns {void} Generates the Month Year string used in the header
+   */
+  reflectMonthYear() {
+    const yearStr = this.centralDate.getFullYear().toString();
+    let monthStr = this.shadowRoot.querySelector('.calendar__navigation-heading#month').innerText;
+
+    this.monthYearLabel.innerText = monthStr.concat(' ', yearStr);
+  }
+
   firstUpdated() {
     this.addEventListener('user-selected-date-changed', () => {
       this.dispatchEvent(new CustomEvent('auroCalendar-dateSelected', {
@@ -38,7 +49,16 @@ class AuroCalendar extends LionCalendar {
       }));
     });
 
+    this.monthYearLabel = document.createElement('div');
+    this.monthYearLabel.id = "monthYearLabel";
+
+    this.shadowRoot.appendChild(this.monthYearLabel);
+
     this.notifyReady();
+  }
+
+  updated() {
+    this.reflectMonthYear()
   }
 }
 
