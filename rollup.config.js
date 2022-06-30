@@ -59,7 +59,8 @@ const auroCalendarConfig = {
     format: 'iife',
     file: 'dist/auro-calendar__bundled.es5.js'
   },
-  plugins: getSharedPlugins(true)
+  plugins: getSharedPlugins(true),
+  inlineDynamicImports: true
 };
 
 export default [modernConfig, auroCalendarConfig];
