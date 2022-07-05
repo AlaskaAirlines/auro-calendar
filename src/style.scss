@@ -88,12 +88,12 @@
 
   &:focus {
     border-color: var(--auro-color-border-active-on-light);
-
-    box-shadow: inset 0 0 0 1px var(--auro-color-border-active-on-light);
   }
 
   &:active {
     border-color: var(--auro-color-border-active-on-light);
+
+    box-shadow: inset 0 0 0 1px var(--auro-color-border-active-on-light);
   }
 
   &:after {
@@ -145,15 +145,19 @@
     text-decoration: none;
   }
 
-  &[disabled] {
-    color: var(--auro-color-text-secondary-on-dark);
+  &[previous-month],
+  &[next-month] {
+    opacity: 0;
 
     pointer-events: none;
   }
 
-  &[previous-month],
-  &[next-month] {
-    opacity: .5;
+  &[selected] {
+    border-color: var(--auro-color-background-darker);
+
+    background-color: var(--auro-color-background-darker);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+    color: var(--auro-color-background-lightest);
   }
 
   &:hover {
@@ -164,14 +168,16 @@
   }
 
   &:focus {
-    border-color: var(--auro-color-border-active-on-light);
+    box-shadow: inset 0 0 0 1px var(--auro-color-background-lightest);
+
+    &:not([selected]) {
+      border-color: var(--auro-color-border-active-on-light);
+    }
   }
 
-  &[selected] {
-    border-color: var(--auro-color-background-darker);
+  &[disabled] {
+    color: var(--auro-color-text-secondary-on-dark);
 
-    background-color: var(--auro-color-background-darker);
-    box-shadow: 0 0 10px rgba(0, 0, 0, .15);
-    color: var(--auro-color-background-lightest);
+    pointer-events: none;
   }
 }
