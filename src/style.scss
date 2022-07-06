@@ -32,11 +32,11 @@
     top: var(--auro-size-md);
     left: 50%;
 
-    margin: .5em 0;
+    margin: .4em 0;
 
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 28px;
+    font-size: var(--auro-text-heading-400-size);
+    font-weight: var(--auro-text-heading-400-weight);
+    line-height: var(--auro-text-heading-400-height);
 
     transform: translateX(-50%);
   }
@@ -44,6 +44,12 @@
 
 .calendar {
   padding-top: var(--auro-size-md);
+}
+
+.calendar__navigation-heading {
+  flex: 1;
+
+  opacity: 0;
 }
 
 .calendar__navigation__year {
@@ -56,19 +62,8 @@
   width: 100%;
 
   flex-direction: row;
-
-  h2 {
-    opacity: 0;
-  }
 }
 
-.calendar__navigation-heading {
-  flex: 1;
-
-  font-size: 20px;
-
-  text-align: center;
-}
 
 .calendar__previous-button,
 .calendar__next-button {
@@ -138,8 +133,6 @@
   cursor: pointer;
 
   font-size: var(--auro-text-body-size-lg);
-  font-weight: 450;
-  line-height: 26px;
 
   &[today] {
     text-decoration: none;
