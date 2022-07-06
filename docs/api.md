@@ -2,18 +2,14 @@
 
 ## Properties
 
-| Property                | Modifiers | Type                     |
-|-------------------------|-----------|--------------------------|
-| `centralDate`           |           | `Date`                   |
-| `dayPreprocessor`       |           | `(day: Day) => Day`      |
-| `disableDates`          |           | `(day: Date) => boolean` |
-| `firstDayOfWeek`        |           | `number`                 |
-| `focusedDate`           | readonly  | `Date \| null`           |
-| `locale`                |           | `string`                 |
-| `maxDate`               |           | `Date`                   |
-| `minDate`               |           | `Date`                   |
-| `selectedDate`          |           | `Date \| undefined`      |
-| `weekdayHeaderNotation` |           | `string`                 |
+| Property                | Type                | Description                                      |
+|-------------------------|---------------------|--------------------------------------------------|
+| `centralDate`           | `Object`            | The date that determines the currently visible month. |
+| `focusedDate`           | `Date \| null`      | The currently focused date (if any).             |
+| `maxDate`               | `Date`              | Maximum date. All dates after will be disabled.  |
+| `minDate`               | `Date`              | Minimum date. All dates before will be disabled. |
+| `selectedDate`          | `Date \| undefined` | The selected date, usually synchronized with datepicker-input.<br />Not to be confused with the focused date (therefore not necessarily in active month view). |
+| `weekdayHeaderNotation` | `string`            | Weekday header notation, based on Intl DatetimeFormat:<br />- 'short' (e.g., Thu)<br />- 'narrow' (e.g., T).<br />Default is 'short' |
 
 ## Methods
 
@@ -32,5 +28,5 @@
 
 | Event                       | Type               | Description                                      |
 |-----------------------------|--------------------|--------------------------------------------------|
-| `auroCalendar-dateSelected` | `CustomEvent<any>` |                                                  |
+| `auroCalendar-dateSelected` | `CustomEvent<any>` | Notifies that a date has been selected in the calendar. |
 | `auroCalendar-ready`        | `CustomEvent<any>` | Notifies that the component has finished initializing. |

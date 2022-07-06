@@ -18,7 +18,7 @@
 //   ...
 // }
 
-/* stylelint-disable selector-class-pattern, property-no-vendor-prefix, order/properties-order */
+/* stylelint-disable selector-class-pattern, property-no-vendor-prefix, order/properties-order, no-descending-specificity, color-function-notation, max-line-length */
 
 :host {
   position: relative;
@@ -63,7 +63,6 @@
 
   flex-direction: row;
 }
-
 
 .calendar__previous-button,
 .calendar__next-button {
