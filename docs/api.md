@@ -9,7 +9,7 @@
 | `maxDate`               | `Date`              | Maximum date. All dates after will be disabled.  |
 | `minDate`               | `Date`              | Minimum date. All dates before will be disabled. |
 | `selectedDate`          | `Date \| undefined` | The selected date, usually synchronized with datepicker-input.<br />Not to be confused with the focused date (therefore not necessarily in active month view). |
-| `weekdayHeaderNotation` | `string`            | Weekday header notation, based on Intl DatetimeFormat:<br />- 'short' (e.g., Thu)<br />- 'narrow' (e.g., T).<br />Default is 'short' |
+| `weekdayHeaderNotation` | `string`            | Weekday header notation, based on Intl DatetimeFormat:<br />- 'short' (e.g., Thu)<br />- 'narrow' (e.g., T).<br />Default is 'short'. |
 
 ## Methods
 
