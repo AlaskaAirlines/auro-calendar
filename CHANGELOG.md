@@ -1,5 +1,14 @@
 # Semantic Release Automated Changelog
 
+## [1.0.1](https://github.com/AlaskaAirlines/auro-calendar/compare/v1.0.0...v1.0.1) (2022-07-11)
+
+
+### Bug Fixes
+
+* **font:** corret font family for calendar days [#14](https://github.com/AlaskaAirlines/auro-calendar/issues/14) ([ac64fc6](https://github.com/AlaskaAirlines/auro-calendar/commit/ac64fc68fcabb9dd170e7fde800e887e7f36c016))
+* **hover:** transparent hover border color [#13](https://github.com/AlaskaAirlines/auro-calendar/issues/13) ([90615db](https://github.com/AlaskaAirlines/auro-calendar/commit/90615dbe4b3a8a074b6152b127b8ac5d5164d50c))
+* **selected:** selected css priority over hover [#15](https://github.com/AlaskaAirlines/auro-calendar/issues/15) ([4207d96](https://github.com/AlaskaAirlines/auro-calendar/commit/4207d969a9c19deaedc2a4b15fba6ae958c91092))
+
 # 1.0.0 (2022-07-06)
 
 
