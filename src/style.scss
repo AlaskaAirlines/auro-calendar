@@ -131,6 +131,7 @@
 
   cursor: pointer;
 
+  font-family: var(--auro-font-family-default);
   font-size: var(--auro-text-body-size-lg);
 
   &[today] {
