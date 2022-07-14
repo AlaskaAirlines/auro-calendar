@@ -58,7 +58,6 @@
 
 .calendar__navigation__month {
   display: flex;
-
   width: 100%;
 
   flex-direction: row;
@@ -152,20 +151,20 @@
     color: var(--auro-color-text-primary-on-light);
   }
 
-  &:focus {
-    box-shadow: inset 0 0 0 1px var(--auro-color-background-lightest);
-
-    &:not([selected]) {
-      border-color: var(--auro-color-border-active-on-light);
-    }
-  }
-
   &[selected] {
     border-color: var(--auro-color-background-darker);
 
     background-color: var(--auro-color-background-darker);
     box-shadow: 0 0 10px rgba(0, 0, 0, .15);
     color: var(--auro-color-background-lightest);
+  }
+
+  &:focus {
+    box-shadow: inset 0 0 0 2px var(--auro-color-background-lightest);
+
+    &:not([selected]) {
+      border-color: var(--auro-color-border-active-on-light);
+    }
   }
 
   &[disabled] {
