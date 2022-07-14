@@ -11,7 +11,7 @@
 | [maxDate](#maxDate)               | `Date`              | Maximum date. All dates after will be disabled.  |
 | [minDate](#minDate)               | `Date`              | Minimum date. All dates before will be disabled. |
 | [selectedDate](#selectedDate)          | `Date \| undefined` | The selected date, usually synchronized with datepicker-input.<br />Not to be confused with the focused date (therefore not necessarily in active month view). |
-| [weekdayHeaderNotation](#weekdayHeaderNotation) | `string`            | Weekday header notation, based on Intl DatetimeFormat:<br />- 'short' (e.g., Thu)<br />- 'narrow' (e.g., T).<br />Default is 'short' |
+| [weekdayHeaderNotation](#weekdayHeaderNotation) | `string`            | Weekday header notation, based on Intl DatetimeFormat:<br />- 'short' (e.g., Thu)<br />- 'narrow' (e.g., T).<br />Default is 'short'. |
 
 ## Methods
 
@@ -154,40 +154,6 @@ Default is 'short'
 ### Method Examples
 
 #### <a name="methodName"></a>`methodName`<a href="#auro-calendar" style="float: right; font-size: 1rem; font-weight: 100;">back to top</a>
-Explanation and use description.
-
-<div class="exampleWrapper">
-  <auro-calendar></auro-calendar>
-</div>
-<auro-accordion lowProfile justifyRight>
-  <span slot="trigger">See code</span>
-
-```html
-<auro-calendar></auro-calendar>
-```
-
-</auro-accordion>
-
-### Event Examples
-
-#### <a name="eventName"></a>`eventName`<a href="#auro-calendar" style="float: right; font-size: 1rem; font-weight: 100;">back to top</a>
-Explanation and use description.
-
-<div class="exampleWrapper">
-  <auro-calendar></auro-calendar>
-</div>
-<auro-accordion lowProfile justifyRight>
-  <span slot="trigger">See code</span>
-
-```html
-<auro-calendar></auro-calendar>
-```
-
-</auro-accordion>
-
-### Slot Examples
-
-#### <a name="slotName"></a>`slotName`<a href="#auro-calendar" style="float: right; font-size: 1rem; font-weight: 100;">back to top</a>
 Explanation and use description.
 
 <div class="exampleWrapper">
