@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [1.0.2](https://github.com/AlaskaAirlines/auro-calendar/compare/v1.0.1...v1.0.2) (2022-07-15)
+
+
+### Bug Fixes
+
+* **focus:** focus style has priority over selected [#17](https://github.com/AlaskaAirlines/auro-calendar/issues/17) ([8f47a22](https://github.com/AlaskaAirlines/auro-calendar/commit/8f47a22d45ea48458944e332873fd323121eed40))
+
 ## [1.0.1](https://github.com/AlaskaAirlines/auro-calendar/compare/v1.0.0...v1.0.1) (2022-07-11)
 
 
